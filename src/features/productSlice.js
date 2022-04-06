@@ -23,12 +23,6 @@ const initialState = {
 export const productSlice = createSlice({
   name: "product",
   initialState,
-
-  reducers: {
-    addToCart: (state, action) => {
-      localStorage.setItem("product", JSON.stringify({ action }));
-    },
-  },
 });
 
 export default productSlice.reducer;
